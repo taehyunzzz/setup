@@ -1,5 +1,4 @@
-# setup
-
+# Basic Setup for Linux Environment (Preferred by ME!)
 ## Get conda
 - https://docs.conda.io/en/latest/miniconda.html
 
@@ -20,4 +19,11 @@
 - conda install -c conda-forge jupyterlab
 - jupyter labextension install jupyterlab_vim
 - jupyter notebook --generate-config
-- cp jupyter_noteboo_config.py /home/kimth/.jupyter/
+  (do setups for ip, allow_remote_access, allow_origin, open_browser, password_required, port, port_retries)
+- jupyter notebook password
+- jupyter-lab password
+
+## Pip installs that you may need
+- numpy
+- torch
+- pandas
