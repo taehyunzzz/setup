@@ -98,16 +98,18 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
+
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/kimth/tools/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/kimth/tools/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/kimth/tools/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/kimth/tools/anaconda3/etc/profile.d/conda.sh"
+    if [ -f "/home/kimth/tools/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/kimth/tools/miniconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/home/kimth/tools/anaconda3/bin:$PATH"
+        export PATH="/home/kimth/tools/miniconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
@@ -115,18 +117,12 @@ unset __conda_setup
 
 conda deactivate
 
-export RISCV="/home/kimth/tools/riscv"
-
 if [ -z $LD_LIBRARY_PATH ]
   then
     LD_LIBRARY_PATH=$HOME/tools/sysc/lib-linux64/
   else 
     LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/tools/sysc/lib-linux64/
   fi
-
-PATH=$PATH:$HOME/.local/bin:$RISCV/bin
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/kimth/tools/riscv/riscv64-unknown-linux-gnu/lib:/home/kimth/tools/riscv/riscv64-unknown-linux-gnu/sysroot/lib
-export PATH
 
 alias tn="tmux new-session"
 alias td="tmux detach"
@@ -138,3 +134,9 @@ alias cl="clear"
 alias work="cd /home/kimth/workspace"
 bindkey "OH" beginning-of-line
 bindkey "OF" end-of-line
+
+# autojump
+[[ -s /home/kimth/.autojump/etc/profile.d/autojump.sh ]] && source /home/kimth/.autojump/etc/profile.d/autojump.sh
+
+autoload -U compinit && compinit -u
+
