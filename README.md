@@ -15,3 +15,9 @@
   (Need to copy some script to ~/.profile or ~/.zshrc)
 - git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
+## Jupyter setup
+- conda install jupyter
+- conda install -c conda-forge jupyterlab
+- jupyter labextension install jupyterlab_vim
+- jupyter notebook --generate-config
+- cp jupyter_noteboo_config.py /home/kimth/.jupyter/
