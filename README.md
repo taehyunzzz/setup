@@ -27,3 +27,6 @@
 - numpy
 - torch
 - pandas
+
+## Git skip authentication after initialization
+- git config credential.helper store 
