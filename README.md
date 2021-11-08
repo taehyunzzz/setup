@@ -29,4 +29,7 @@
 - pandas
 
 ## Git skip authentication after initialization
+- git config --global user.email "taehyunzzz@snu.ac.kr"
+- git config --global user.name "Taehyun Kim"
+- git config --global core.editor "vim"
 - git config credential.helper store 
