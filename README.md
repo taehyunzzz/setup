@@ -17,7 +17,7 @@
 ## Jupyter setup
 - conda install jupyter
 - conda install -c conda-forge jupyterlab
-- jupyter labextension install jupyterlab_vim
+- pip install jupyterlab_vim
 - jupyter notebook --generate-config
   (do setups for ip, allow_remote_access, allow_origin, open_browser, password_required, port, port_retries)
 - jupyter notebook password
