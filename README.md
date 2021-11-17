@@ -34,6 +34,6 @@
 - git config --global core.editor "vim"
 - git config credential.helper store 
 
-## convert jupyter notebooks to another format (.py, .html, .pdf and so on) 
+## Convert jupyter notebooks to another format (.py, .html, .pdf and so on) 
 - jupyter nbconvert --to script my_notebook.ipynb
 - Details @ https://towardsdatascience.com/jump-out-of-the-jupyter-notebook-with-nbconvert-7d4748960702
