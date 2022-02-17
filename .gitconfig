@@ -1,0 +1,9 @@
+[user]
+	email = taehyunzzz@snu.ac.kr
+	name = Taehyun Kim
+
+[alias]
+    tree = log --graph --decorate --pretty=oneline --abbrev-commit
+    co = checkout
+
+[http]
