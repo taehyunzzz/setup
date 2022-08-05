@@ -11,12 +11,12 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools
 ## Copy .zshrc, .vimrc
 - cp .zshrc .vimrc ${HOME}
 
-## Get autojump
+## Get autojump (Need to copy some script to ~/.profile or ~/.zshrc)
 git clone https://github.com/wting/autojump.git
 cd autojump
 ./install.py 
 
-## Get autosuggestion (Need to copy some script to ~/.profile or ~/.zshrc)
+## Get autosuggestion
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 ## Jupyter setup
