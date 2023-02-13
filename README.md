@@ -38,6 +38,10 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 - git config --global user.name "Taehyun Kim"
 - git config --global core.editor "vim"
 - git config credential.helper store 
+In short,
+```
+git config --global user.email "taehyunzzz@snu.ac.kr"; git config --global user.name "Taehyun Kim"; git config --global core.editor "vim"; git config credential.helper store 
+```
 
 ## Convert jupyter notebooks to another format (.py, .html, .pdf and so on) 
 - jupyter nbconvert --to script my_notebook.ipynb
