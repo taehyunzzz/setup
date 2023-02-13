@@ -38,6 +38,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 - git config --global user.name "Taehyun Kim"
 - git config --global core.editor "vim"
 - git config credential.helper store 
+
 In short,
 ```
 git config --global user.email "taehyunzzz@snu.ac.kr"; git config --global user.name "Taehyun Kim"; git config --global core.editor "vim"; git config credential.helper store 
