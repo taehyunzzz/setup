@@ -1,3 +1,11 @@
+# List of files to install
+- conda
+- zsh, oh-my-zsh
+- autojump, autosuggestion
+- jupyter
+- torch, pandas, matplotlib, numpy, transformers
+- deepspeed : DS_BUILD_SPARSE_ATTN=1 DS_BUILD_TRANSFORMER=1 DS_BUILD_TRANSFORMER_INFERENCE=1 pip install deepspeed --global-option="build_ext" --global-option="-j8"
+
 # Basic Setup for Linux Environment (Preferred by ME!)
 ## Get conda
 - https://docs.conda.io/en/latest/miniconda.html
